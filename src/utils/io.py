@@ -17,7 +17,7 @@ class IO:
         '&5': bcolors.PURPLE,
         '&e': bcolors.YELLOW,
         '&c': bcolors.RED,
-        '&b': bcolors.BOLD,
+        '&l': bcolors.BOLD,
         '&n': bcolors.UNDERLINE,
         '&f': bcolors.ENDC,
     }

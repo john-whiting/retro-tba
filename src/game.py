@@ -6,7 +6,7 @@ from gametypes.usable import Usable
 from utils.io import IO
 
 def player_death(state, entity):
-    IO.print(f'&b&cYOU DIED!!!!!')
+    IO.print(f'&l&cYOU DIED!!!!!')
     state['quit'] = True
 
 def entity_death(state, entity):
@@ -69,6 +69,10 @@ def pull_lever(state, room_id: Union[int, List[int]] = 0):
 
 def start():
     IO.clear_console()
+    IO.print('&eWelcome to Retro TBA!')
+    IO.print('&eType &2help &eto view a list of commands!')
+    IO.print('')
+
     state = {
         'player': None,
         'cur_room': None,

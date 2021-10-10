@@ -61,9 +61,23 @@ def use(state, *args) -> bool:
 def help(state) -> bool:
     IO.print(
 """
-&b&1--------------------------------
+&l&1--------------------------------
+&eHere is a list of all commands:
 
-&b&1--------------------------------
+&eThese commands use up your turn, they are &laction &ecommands:
+&2go <direction> - &1Use this to navigate between rooms (some rooms are one way only)
+&2inspect <oddity> - &1Use this to interact with different oddities in a room
+&2use <item name> [on] [entity name] - &1Use this to use an item either on yourself or on an entity
+
+&eThese commands do not use up your turn, they are &linformational &ecommands:
+&2help - &1Use this to display the different commands you can run
+&2info <item name> - &1Use this to display the description of an item
+&2inventory - &1Use this to view the different items in your inventory
+&2look - &1Use this to view the attributes of the room, like inspectables, adjacent rooms, and entities
+&2status - &1Use this to view your stats like HP, Mana Points, and your current status effects
+
+&2quit - &1This will exit the game at any time
+&l&1--------------------------------
 """
     )
     return False
